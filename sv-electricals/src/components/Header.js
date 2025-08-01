@@ -64,7 +64,7 @@ const Header = () => {
                 S V Electricals
               </h1>
               <p className="text-xs text-gray-600 hidden sm:block">
-                Engineering Works
+                and Engineering Works
               </p>
             </div>
           </motion.div>

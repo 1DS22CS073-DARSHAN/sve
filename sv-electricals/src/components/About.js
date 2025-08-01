@@ -5,8 +5,8 @@ import { Award, Users, Calendar, Target } from 'lucide-react';
 const About = () => {
   const stats = [
     { icon: Calendar, label: 'Years Experience', value: '15+', color: 'text-blue-600' },
-    { icon: Users, label: 'Happy Clients', value: '500+', color: 'text-green-600' },
-    { icon: Target, label: 'Projects Completed', value: '1000+', color: 'text-purple-600' },
+    { icon: Users, label: 'Happy Clients', value: '150+', color: 'text-green-600' },
+    { icon: Target, label: 'Projects Completed', value: '150+', color: 'text-purple-600' },
     { icon: Award, label: 'Quality Standards', value: 'ISO', color: 'text-yellow-600' },
   ];
 

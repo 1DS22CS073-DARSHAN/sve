@@ -71,7 +71,7 @@ const Hero = () => {
                 <span className="gradient-text">S V Electricals</span>
               </span>
               <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white/90 font-medium">
-                Engineering Works
+                and Engineering Works
               </span>
             </motion.h1>
 

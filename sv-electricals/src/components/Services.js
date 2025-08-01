@@ -169,7 +169,9 @@ const Services = () => {
                   whileTap={{ scale: 0.95 }}
                   className={`group/btn w-full bg-gradient-to-r ${service.gradient} text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl font-semibold flex items-center justify-center space-x-2 hover:shadow-lg transition-all duration-200 text-sm sm:text-base`}
                 >
-                  <span>Learn More</span>
+                  <a href='#contact'>
+                    <span>Contact Us</span>
+                  </a>
                   <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover/btn:translate-x-1 transition-transform" />
                 </motion.button>
               </div>
