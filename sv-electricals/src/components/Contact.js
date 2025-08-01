@@ -31,7 +31,7 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Company location (example coordinates - replace with actual location)
-  const companyLocation = [28.6139, 77.2090]; // Delhi coordinates as example
+  const companyLocation = [13.011606, 77.491790]; // Delhi coordinates as example
 
   const contactInfo = [
     {
@@ -388,7 +388,7 @@ const Contact = () => {
               <div className="h-64 rounded-lg overflow-hidden">
                 <MapContainer
                   center={companyLocation}
-                  zoom={13}
+                  zoom={14}
                   style={{ height: '100%', width: '100%' }}
                 >
                   <TileLayer
@@ -402,7 +402,7 @@ const Contact = () => {
                         <br />
                         Industrial Area, Sector 15
                         <br />
-                        New Delhi, India
+                        Peenya 2nd Stage, Bengaluru - 560091
                       </div>
                     </Popup>
                   </Marker>
