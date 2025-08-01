@@ -25,23 +25,27 @@ const Hero = () => {
       </div>
 
       {/* Animated Background Elements */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-2 h-2 bg-white/10 rounded-full"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * 100,
+              y: Math.random() * 100,
             }}
             animate={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * 100,
+              y: Math.random() * 100,
             }}
             transition={{
               duration: Math.random() * 10 + 10,
               repeat: Infinity,
               repeatType: 'reverse',
+            }}
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
             }}
           />
         ))}
@@ -56,9 +60,9 @@ const Hero = () => {
           className="space-y-8"
         >
           {/* Main Heading */}
-          <div className="space-y-4">
+          <div className="space-y-4 px-4">
             <motion.h1
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
@@ -66,13 +70,13 @@ const Hero = () => {
               <span className="block">
                 <span className="gradient-text">S V Electricals</span>
               </span>
-              <span className="block text-3xl md:text-4xl lg:text-5xl text-white/90 font-medium">
+              <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white/90 font-medium">
                 Engineering Works
               </span>
             </motion.h1>
 
             <motion.p
-              className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed"
+              className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
@@ -84,7 +88,7 @@ const Hero = () => {
 
           {/* Feature Icons */}
           <motion.div
-            className="flex flex-wrap justify-center gap-8 my-12"
+            className="flex flex-wrap justify-center gap-4 sm:gap-8 my-8 sm:my-12 px-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -103,28 +107,28 @@ const Hero = () => {
                 transition={{ delay: 0.8 + index * 0.2, duration: 0.6 }}
               >
                 <div className="relative">
-                  <item.icon className={`h-12 w-12 ${item.color}`} />
+                  <item.icon className={`h-8 w-8 sm:h-12 sm:w-12 ${item.color}`} />
                   <motion.div
                     className={`absolute inset-0 ${item.color.replace('text-', 'bg-')} rounded-full opacity-20`}
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ duration: 2, repeat: Infinity, delay: index * 0.5 }}
                   />
                 </div>
-                <span className="text-sm font-medium">{item.label}</span>
+                <span className="text-xs sm:text-sm font-medium text-center">{item.label}</span>
               </motion.div>
             ))}
           </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.8 }}
           >
             <motion.button
               onClick={scrollToServices}
-              className="group bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg transform transition-all duration-200 flex items-center space-x-2"
+              className="group bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg shadow-lg transform transition-all duration-200 flex items-center space-x-2 w-full sm:w-auto justify-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -134,7 +138,7 @@ const Hero = () => {
 
             <motion.button
               onClick={scrollToContact}
-              className="group border-2 border-white text-white hover:bg-white hover:text-primary-800 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-200 flex items-center space-x-2"
+              className="group border-2 border-white text-white hover:bg-white hover:text-primary-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-200 flex items-center space-x-2 w-full sm:w-auto justify-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

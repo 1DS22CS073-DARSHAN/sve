@@ -58,8 +58,8 @@ const Footer = () => {
 
       <div className="relative z-10">
         {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Company Info */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -68,9 +68,9 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="lg:col-span-2"
             >
-              <div className="flex items-center space-x-3 mb-6">
+              <div className="flex items-center space-x-3 mb-4 sm:mb-6">
                 <div className="relative">
-                  <Zap className="h-10 w-10 text-primary-500" />
+                  <Zap className="h-8 w-8 sm:h-10 sm:w-10 text-primary-500" />
                   <motion.div
                     className="absolute inset-0 bg-primary-500 rounded-full opacity-20"
                     animate={{ scale: [1, 1.2, 1] }}
@@ -78,12 +78,12 @@ const Footer = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">S V Electricals</h3>
-                  <p className="text-gray-400">Engineering Works</p>
+                  <h3 className="text-xl sm:text-2xl font-bold">S V Electricals</h3>
+                  <p className="text-gray-400 text-sm sm:text-base">Engineering Works</p>
                 </div>
               </div>
               
-              <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
+              <p className="text-gray-300 leading-relaxed mb-4 sm:mb-6 max-w-md text-sm sm:text-base">
                 Leading manufacturer of industrial cranes and constructor of industrial 
                 sheds. We provide comprehensive engineering solutions with over 15 years 
                 of experience in the industry.

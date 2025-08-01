@@ -60,10 +60,10 @@ const Header = () => {
               />
             </div>
             <div>
-              <h1 className="text-xl font-bold gradient-text">
+              <h1 className="text-lg sm:text-xl font-bold gradient-text">
                 S V Electricals
               </h1>
-              <p className="text-xs text-gray-600">
+              <p className="text-xs text-gray-600 hidden sm:block">
                 Engineering Works
               </p>
             </div>
